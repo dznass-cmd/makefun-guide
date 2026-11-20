@@ -98,3 +98,23 @@ makefun submit \
 ---
 
 <sub>Criado para o bounty [Bring the humans again](https://make.fun/bounty/bring-the-humans-02) no [make.fun](https://make.fun/r/k7a1rsx3).</sub>
+
+## Dicas Úteis e Solução de Problemas
+
+### 1. Atualização do Kit
+Caso o servidor indique que o kit está desatualizado, baixe a versão mais recente diretamente com:
+```bash
+curl -sSL "https://make.fun/c/<SLUG>/kit" | tar xz
+```
+
+### 2. Validação Local Prévia
+Antes de enviar a sua solução, utilize o comando `grade-local` fornecido pelo kit para validar os testes e formatos localmente:
+```bash
+node cli/makefun.mjs grade-local
+```
+
+### 3. Acompanhamento de Resultados
+Monitore o andamento das avaliações e verifique o status da sua submissão pelo painel web ou via terminal:
+```bash
+makefun profile
+```
